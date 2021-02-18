@@ -1,0 +1,86 @@
+\documentclass[10pt,stdletter,dateno]{newlfm}
+\usepackage{kpfonts}
+\usepackage{url}
+
+\usepackage{etoolbox}
+
+\makeatletter
+\patchcmd{\@zfancyhead}{\fancy@reset}{\f@nch@reset}{}{}
+\patchcmd{\@set@em@up}{\f@ncyolh}{\f@nch@olh}{}{}
+\patchcmd{\@set@em@up}{\f@ncyolh}{\f@nch@olh}{}{}
+\patchcmd{\@set@em@up}{\f@ncyorh}{\f@nch@orh}{}{}
+\makeatother
+
+\widowpenalty=500
+\clubpenalty=500
+
+\newlfmP{headermarginskip=-10pt}
+\newlfmP{sigsize=10pt}
+\newlfmP{dateskipafter=5pt}
+\newlfmP{addrfromphone}
+\newlfmP{addrfromemail}
+\PhrPhone{Phone}
+\PhrEmail{Email}
+
+\namefrom{Kenneth Long}
+\addrfrom{%
+    \today\\[5pt]
+    Kenneth Long \\
+    Route de Champvigny 51 \\
+    1242 Satigny, Switzerland
+}
+\phonefrom{+41 77 503 9513}
+\emailfrom{kdlong07@gmail.com}
+
+\addrto{%
+Expedia Group\\
+Geneva, Switzerland}
+
+\greetto{Dear Hiring Manager,}
+\closeline{With best regards,}
+\begin{document}
+\begin{newlfm}
+
+I was thrilled to see your job announcement for a Data Scientist position at Expedia Group. 
+I am very familiar with the huge range of tools that Expedia has developed to help consumers feel confident while
+finding flexible and affordable travel solutions.
+With more than five years of experience as a researcher and data scientist working on the analysis of petabytes of data 
+collected at CERN in Geneva, Switzerland, I am passionate about using data to build
+complex insights and to drive results.
+I am eager to bring the forward-thinking approach
+that I developed while working at one of the most innovative scientific laboratories in the world to a company
+that harnesses the power of data to make travel accessible, affordable, and comfortable for all.
+I know that Expedia Group shares my passion for innovative solutions, and I am confident that I would be
+an asset to the thriving data science team at Expedia Group in Geneva.
+
+\textbf{What specifically could I bring to your team?}
+
+\begin{itemize}
+    \item \textbf{An innovative and results-oriented mindset}
+
+    I have coordinated diverse groups of colleagues in novel data-analysis projects,
+    from estimating properties of data sets with complex maximum likelihood fits to exploring new methods of clustering 
+    with graph neural networks.
+
+    \item \textbf{Expertise in data science analysis and visualization tools}  
+
+    I am experienced in Python, R, and Scala and their analysis, machine learning,  and visualization packages,
+    including TensorFlow, Keras, Matplotlib, Plotly, and ggplot.
+    I have studied and used many other programming languages, making me comfortable and adept at learning new tools quickly.
+
+    \item \textbf{Excellent communication and presentation skills}
+        
+    I am skilled at preparing technical reports and communicating complex ideas to a variety of audiences. 
+    I have presented scientific research at tens of international conferences and have lead seminars and science outreach efforts for the general public.
+
+\end{itemize}
+
+Finally, my strong work ethic and ability to build relationships with people from all cultures has allowed me to
+be a leader in a cutting-edge scientific environment for the past seven years. I am interested in bringing this
+approach to a consumer-oriented business, and I am confident that the team at Expedia Group is a great match for my skills and interests.
+
+
+I would be delighted to further discuss the value I could bring to your team. Thank you very much 
+for your consideration, and I look forward to hearing from you.
+\end{newlfm}
+\end{document}

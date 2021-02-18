@@ -1,265 +1,111 @@
-\documentclass[10pt]{res} % default is 10 pt
-%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
-%\usepackage{newcent}   % uses new century schoolbook postscript font 
-%\setlength{\textheight}{9 in} % increase text height to fit resume on 1 page
-%\newsectionwidth{0pt}  % So the text is not indented under section headings
-\usepackage[dvipsnames]{xcolor}
-\usepackage{hyperref}
-\usepackage[T1]{fontenc}
-\usepackage{enumitem}
-\setlist[itemize]{align=parleft,left=0pt..1em, label={$-$}}
-\setlist[enumerate]{align=parleft,left=0pt..1em}
+\documentclass[9pt,a4paper]{moderncv}
+
+% moderncv themes
+\moderncvtheme[blue]{classic}                  % optional argument are 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+%\moderncvtheme[green]{classic}                % idem
+
+% character encoding
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+
+% adjust the page margins
+\usepackage[scale=0.89]{geometry}
+\setlength{\hintscolumnwidth}{2.5cm}						% if you want to change the width of the column with the dates
+\AtBeginDocument{\setlength{\makecvheadnamewidth}{14 cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+
+% personal data
+\firstname{Kenneth}
+\familyname{Long}
+\title{Physicist and data scientist}               % optional, remove the line if not wanted
+
+
+\address {\textbf{Nationality}:  American}{\textbf{Birth date}: May 8, 1991}
+\extrainfo{Route de Champvigny 51, 1242 Satigny (Switzerland)}
+\mobile  {  +41 76 503 9513}         % optional, remove the line if not wanted
+%\phone{            (+39)062291044      }                      % optional, remove the line if not wanted                  % optional, remove the line if not wanted
+\email{kdlong07@gmail.com}  
+\social[linkedin]{kdlong07}
+\social[github]{kdlong}
+
+\photo[64pt][0.4pt]{photo2}                         % '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file; optional, remove the line if not wanted
+
+
+% to show numerical labels in the bibliography; only useful if you make citations in your resume
+\makeatletter
+\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+\makeatother
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
 
 \begin{document}
+\maketitle
 
-\name{Kenneth Long\\ \hspace{-0.2cm}{kenneth.long@cern.ch} \\[11pt]} % the \\[12pt] adds a blank line after name
+%\section{Personal Details}
+%\cvitem{First name:}{Claudia}
+%\cvitem{Last name:}{Tambasco}
+%\cvitem{Nationality:}{Italian}
+%\cvitem{Date of birth:}{28th May 1988}
+%\cvitem{Country of birth:}{Italy}
+%\cvitem{Place of birth:}{Rome (Italy)}
+%\cvitem{Home address:}{Via F.Vitalini, 65  E/D}
+%\cvitem{}{00155 Roma}
 
-\address{{\bf Current Address} \\  CERN B40/2-A20 \\  Geneva 23 \\ Switzerland \\ Tel: +41 77 501 95 13 }
-\address{}
+\section{Skills}
 
-\begin{resume}
-\section{\textsc{Education}}
-  \textbf{University of Wisconsin-Madison}, Madison, WI \\
-Ph.D. in Experimental High Energy Physics, April 2019 \\
-  Thesis advisor: Prof. Matthew Herndon \\
-    Thesis topic: \emph{Measurement of electroweak WZ boson production and search for new physics in proton-proton collisions at $\sqrt{s}=13$\,TeV with the CMS detector at the CERN LHC} \\
-  \textbf{Tennessee Technological University}, Cookeville, TN \\
-Bachelor of Science in Physics, \textit{Summa Cum Laude}, May 2013
+\cvline{Programming Languages}{Highly experienced in Python, Bash, C++, C;
+    comfortable in R, Java, Scala; familiar with SQL, Perl, Fortran}
+\cvline{Analysis}{Linear/logistic regression, mixed linear models, neural networks and deep learning, tree-based methods}
+\cvline{Tools}{Machine learning: Keras, Tensorflow; visualization: matplotlib, plotly, ggplot; general: git, HTCondor}
+\cvline{Communication}{Experienced communicating work to diverse audiences. Presented 10--20 talks at international conferences. Seminars and volunteer efforts communicating science to general public.}
 
-\section{\textsc{Professional Experience}}
-\vspace{-0.1in}
-\begin{tabbing}
-\hspace{2.3in}\= \hspace{2.4in}\= \kill % set up two tab positions
-{\bf Senior Research Fellow} \>\> Aug. 2019 -- Present \\
-European Organization for Nuclear Research (CERN)   \\  Meyrin, Switzerland \\
-{\bf Postdoctoral Research Associate} \>\> May 2019 -- Jul. 2019\\
-Univ. of Wisconsin-Madison Compact Muon Solenoid Group \\  Madison, WI, US \\
-{\bf Graduate Research Assistant} \>\> Jul. 2013 -- Apr. 2019\\
-Univ. of Wisconsin-Madison Compact Muon Solenoid Group \\  Madison, WI, US and Meyrin, Switzerland \\
-\end{tabbing}\vspace{-20pt}      % suppress blank line after tabbing
-
-\section{\textsc{Research Interests}}
-Testing the standard model of particle physics in collisions at the Large Hadron Collider (LHC). 
-Leveraging precision measurements as a tool to probe subtle effects from undiscovered new phenomena. 
-Developing new machine-learning based reconstruction techniques to enable future measurements in the 
-complex environment of future colliders.
-
-\section{\textsc{Leadership Roles in the CMS experiment}}
-    \item{\textbf{Convener of Multi-boson Analysis Group} \hfill{Sep. 2019 -- Present}} \\
-    Coordinating standard model physics subgroup studying production of final states
-    with multiple vector bosons. Oversaw the development and publication of ten new measurements, 
-    including the first observation of triple vector boson production and the most accurate measurements 
-    to date of WZ, WW, and W$\gamma$ vector boson scattering. Currently reviewing and guiding
-    more than ten on-going analyses.
-\item{\textbf{Convener of Matrix Element and Future Generators Group} \hfill{Jun. 2017 -- May 2019}}\\
-    Directed Monte Carlo Generators subgroup 
-    responsible for maintenance and development of event simulation software used to simulate
-    billions of collisions for the use in CMS analyses.
-\item{\textbf{Standard Model Physics Group Monte Carlo Contact} \hfill{Feb. 2016 -- Aug. 2017}} \\
-    Oversaw
-    production of Monte Carlo event samples for the CMS standard model physics group. 
-    Duties included technical support, coordinating requests, and monitoring samples in computing production.
-\item{\textbf{ Data Certification Expert, Cathode Strip Chamber}\hfill{Jul. 2015 -- Nov. 2018}} \\
-    Coordinated discussion and determined if
-    detector data quality was satisfactory for use in physics analyses.
-    Communicated with experts to understand
-    causes of data quality degradation.
-\end{itemize}
-
-\section{\textsc{CMS Analysis Activities}}
+\section{Experience}
+\cventry{Aug 2019 - present}{Senior research fellow}{European Organization for Nuclear Research (CERN)}{Geneva, CH}{}
+{
 \begin{itemize}
-  \item\textbf{{Precision measurements of W and Z boson production}} \\
-    Performing measurements of W and Z boson properties in high- and low-pileup data.
-    Focusing on minimizing the theoretical uncertainty in the W mass measurement 
-    through auxiliary measurements and by leveraging state-of-the-art
-    predictions.
-    
-  \item\textbf{{Measurements of diboson production via vector boson scattering}} \\
-    Analysis contact and lead analyzer for first WZ vector boson scattering analysis in CMS (CMS publication 3).
-    Responsible for all aspects, 
-    including development of analysis framework, procedure, optimization, and validation. 
-    Closely involved in the development of the extended study (CMS publication 2), including a novel approach
-    to simultaneously measure the WZ and W$^{\pm}$W$^{\pm}$ electroweak cross sections.
-    Projections of CMS electroweak WZ production measurement to high luminosity, including studies of
-    WZ polarization and sensitivity to new physics (CMS publications 4, 10). 
-
-  \item\textbf{{Measurements of diboson production cross sections}} \\
-    First cross section measurements
-    of ZZ and WZ production at 13 TeV (CMS publications 6 and 7). 
-    Differential measurements and constraints on anomalous
-    triple gauge couplings in ZZ channel using leptonic decays
-    with 2016 (CMS publication 5) and 2016--2018 datasets (CMS publication 1). 
-    Developed analysis software framework, produced results for theoretical comparisons, 
-    and supervised junior graduate students.
-    
+    \item Developing new approaches to object clustering using graph neutral networks. Optimizing algorithms for fast and accurate clustering of hundreds of thousands of electrical signals into clusters of a common origin. Publication in progress.
+    \item Developed visualization framework exploiting modern python packages (numpy, pandas, plotly) for intuitive evaluation of clustering algorithms.
+    \item Building simulations that enable rigorous data set labeling for unambiguous training and validation of clustering algorithms.
+    \item Developed production framework for a lightweight and versatile columnar data format used by hundreds of scientists for faster simulation production and more intuitive analysis. Recognized with a collaboration-wide award for this work.
+    \item Using state-of-the art tools implementing TensorFlow to perform complex maximum-likelihood fits with hundreds of bins and thousands of nuisance parameters to precisely estimate data set properties.
+    \item Coordinating a group of $\sim$50 colleagues making measurements of predicted, but previously unmeasured, phenomena. Lead the review of 15-20 projects, resulting in $\sim$10 publications per year.
 \end{itemize}
+}
 
-\section{\textsc{Other Projects and Responsibilities in CMS}}
+\cventry{Jul 2013 - Jul 2019}{Researcher}{University of Wisconsin-Madison}{Madison, WI, USA and Geneva, CH}{}
+{
 \begin{itemize}
-  \item\textbf{Reconstruction algorithms for silicon calorimeters}\hfill{Oct. 2019 -- present} \\
-    Studying use of graphical neutral networks for reconstruction in the high-granularity calorimeter
-    planned for the CMS detector upgrade in 2026. Improved use of simulation software to define 
-    robust truth target for machine learning algorithms.
-    Contributing to the development and training of algorithms.
-
-  \item\textbf{Monte Carlo generator integration and support}\hfill{Jan. 2017 -- present} \\
-    Developed a new data format, now used throughout CMS, to enable fast and lightweight production
-    of generator-level collision simulations.
-    Leading developer of software used to interface simulation tools
-    developed by theoretical collaborations into experimental software framework (2017 -- 2019).
-
-  \item\textbf{Endcap muon detector detector on-call shifter}\hfill{Apr. 2016 -- Jul. 2018} \\
-    First contact for CMS endcap muon system during commissioning and data-taking for three weeks per year
-    from 2016-2018. Duties included monitoring of the cathode strip chamber system, coordinating maintenance activities,
-    and addressing any urgent issues affecting data collection or quality.
-
-  \item\textbf{Muon detector longevity studies}\hfill{Jan. 2016 -- Jun. 2016} \\
-    Assisted in setup of test system and performance measurements of cathode strip chambers
-    exposed to high intensity gamma radiation to assess the physical degradation and impact on muon
-    reconstruction performance. Operation shifts during data collection with muon beams.
+    \item Analyzed data set of billions of particle collisions to perform the first measurement of a rare process. Used statistical modeling and maximum likelihood estimation to establish the properties of this new process and their statistical significance.
+    \item Developed, validated, and deployed scalable software frameworks to perform big data analysis using
+distributed computing infrastructure (100 GB--1 PB pipelines) that led to several publication. Framework currently used by 10-20 people.
+    \item Developed and implemented an object-oriented structure for simulation meta data. Integrated into software used by hundreds of colleagues. 
+    \item Lead a small group ($\sim$10 people) on the support, software integration, and validation of new simulation tools, exploiting expertise in software, numerical calculations, and distributed computing.
+    \item Supported the operation of CERN particle detectors as an on-call expert several weeks per year. Monitored data quality and promptly addressed computing and hardware issues preventing high-quality data collection.
+    \item Instructor for two classes of electricity and magnetism for engineers ($\sim$50 students). Responsible for preparing 4 lectures/week and 2 labs/week as well as preparing and grading assignments.
 \end{itemize}
+}
+\newpage
+\section{Education}
+%\cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}
+\cventry{July 2013 -- Apr 2019}{Ph.D. in Physics}{University of Wisconsin-Madison}{Madison, WI, USA}{}
+{
+    Specialization: Experimental particle physics\newline 
+    Thesis topic:  \href{http://cds.cern.ch/record/2673625?ln=en}{\emph{Measurement of electroweak WZ boson production and search for new physics in proton-proton collisions at $\sqrt{s}=13$\,TeV with the CMS detector at the CERN LHC}} \\
+    \normalsize \textit{GPA: 3.73/4.00} 
+}
+\cventry{Aug 2009 -- May 2013}{Bachelor of Science in Physics}{Tennessee Technological University}{Cookeville, TN, USA}{}{\normalsize \textit{GPA: 3.97/4.00}}
 
-\section{\textsc{CMS Publications and Public Results with Significant Contributions}}
-\begin{enumerate}
-  \item CMS Collaboration, ``Measurements of pp $\rightarrow$ ZZ production cross section and constraints on anomalous triple gauge couplings at $\sqrt{s} = 13~\mathrm{TeV}$,'' Submitted to EPJC, \href{https://arxiv.org/abs/2009.01186}{\texttt{arXiv:2009.01186 [hep-ex]}}
-  \item CMS Collaboration, ``Measurements of production cross sections of WZ and same-sign WW boson pairs in association with two jets in proton-proton collisions at $\sqrt{s} =$ 13 TeV'' Phys. Lett. B 809 (2020) 135710, \href{https://arxiv.org/abs/2005.01173}{\texttt{arXiv:2005.01173 [hep-ex]}}
-  \item CMS Collaboration, ``Measurement of electroweak WZ boson production and search for new physics in WZ $+$ two jets events in pp collisions at $\sqrt{s}=13$\,TeV,'' Phys. Lett. B 795 (2019) 281, \href{https://arxiv.org/abs/1901.04060} {\texttt{arXiv:1901.04060 [hep-ex]}}
-  \item CMS Collaboration, ``Prospects for the measurement of electroweak and polarized $\mathrm{WZ}\to3\ell\nu$ production cross sections at the High-Luminosity LHC,'' CMS-PAS-FTR-18-038
-  \item CMS Collaboration, ``Measurement of the pp $\rightarrow$ ZZ production cross section, $\mathrm{Z} \to 4\ell$ branching fraction, and constraints on anomalous triple gauge couplings at $\sqrt{s} = 13~\mathrm{TeV}$,'' Eur. Phys. J. C 78 (2018) 165, \href{https://arxiv.org/abs/1709.08601}{\texttt{arXiv:1709.08601 [hep-ex]}}
-  \item CMS Collaboration, ``Measurement of the WZ production cross section in pp collisions at $\sqrt{s}$ = 13 TeV,''
-Phys. Lett. B 766, 268 (2016), \href{https://arxiv.org/abs/1607.06943}{\texttt{arXiv:1607.06943 [hep-ex]}}
-  \item CMS Collaboration, ``Measurement of the ZZ production cross section and Z $\rightarrow l^{+}l^{-}l'^{+}l'^{-}$ branching fraction in pp collisions at $\sqrt{s} =$ 13 TeV,''
-Phys. Lett. B 763, (2016) 280, \\ \href{https://arxiv.org/abs/1607.08834} {\texttt{arXiv:1607.08834 [hep-ex]}}
-  \item CMS Collaboration, ``Performance of the CMS muon detector and muon reconstruction with proton-proton collisions at $\sqrt{s} = 13$ TeV,''
-JINST 13 (2018) P06015, \href{https://arxiv.org/abs/1804.04528} {\texttt{arXiv:1804.04528 [hep-ex]}}
-\end{enumerate}
+\section{Languages}
+\cvlanguage{English}{Native}{}
+\cvlanguage{French}{CEFR B2}{Completed B2 certification course winter 2021}
 
-\section{\textsc{Other Publications with Significant Contributions}}
-\begin{enumerate}
-  \item M. Gallinaro, K. Long, J. Reuter, R. Ruiz (editors) et al.,``Beyond the Standard Model in Vector Boson Scattering Signatures,''
-    VBSCAN-PUB-04-20, CERN-OPEN-2020-008, \href{https://arxiv.org/abs/2005.09889}{\texttt{arXiv:2005.09889 [hep-ex]}}
-  \item S. Amoroso et al., ``Les Houches 2019: Physics at TeV Colliders Standard Model Working Group Report,''
-    \href{https://arxiv.org/abs/2003.01700 } {\texttt{arXiv:2003.01700 [hep-ex]}}
-  \item HL-LHC Collaboration and HE-LHC Working Group, ``Standard Model Physics at the HL-LHC and HE-LHC,''
-    CERN-LPCC-2018-03, \href{https://arxiv.org/abs/1902.04070}{\texttt{arXiv:1902.04070 [hep-ex]}}
-  \item J.R. Andersen et al., ``Les Houches 2017: Physics at TeV Colliders Standard Model Working Group Report,''
-    FERMILAB-CONF-18-122-CD-T, UWTHPH-2018-5, \href{https://arxiv.org/abs/1803.07977}{\texttt{arXiv:1803.07977 [hep-ex]}}
-  \item C. Anders et al., ``VBSCan Split 2017 Workshop Summary,'' 
-    VBSCAN-PUB-01-17, FERMILAB-CONF-18-021-PPD, \href{https://arxiv.org/abs/1801.04203}{\texttt{arXiv:1803.07977  [hep-ex]}}
-\end{enumerate}
-
-\section{\textsc{Presentations at International Conferences and Workshops}}
-\vspace{-0.1in}
-\begin{tabbing}
-\hspace{2.3in}\= \hspace{2.6in}\= \kill % set up two tab positions
-\bf{BSM models in vector boson scattering---VBSCan workshop} 		 \> \>	    Dec. 2019 \\
-Lisbon, Portugal -- Invited Plenary\
-``Vector boson scattering results and future prospects'' \\
-\bf{Standard Model at LHC 2019} 		 \> \>	    Apr. 2019 \\
-Zurich, Switzerland -- Contributed Plenary \\
-``Recent vector boson fusion and scattering measurements at ATLAS and CMS'' \\
-\bf{US LHC Users Association Meeting 2018} 		 \> \>	    Oct. 2018 \\
-Fermilab, Batavia, IL, US -- Young Scientists Lightning Round \\
-``Search for electroweak WZ vector boson scattering and new physics at CMS'' \\
-\emph{Awarded best presentation } \\
-\bf{Multi-boson Interactions 2018} 		 \> \>	    Aug. 2018 \\
-Ann Arbor, MI, US -- Contributed Plenary \\
-``Results from ATLAS and CMS on the neutral VBS production \\
-\bf{XXXIX International Conference on High Energy Physics} 		 \> \>	    Jul. 2018 \\
-Seoul, South Korea -- Contributed Parallel\\
-``Vector Boson Scattering Results from CMS'' \\
-\bf{30th Rencontres de Blois} 		 \> \>	    Jun. 2018 \\
-Blois, France -- Contributed Parallel\\
-``VBS and VBF results from ATLAS and CMS'' \\
-\bf{17th MCnet Collaboration Meeting} 		 \> \>	    Apr. 2018 \\
-CERN, Geneva, Switzerland -- Contributed Plenary\\
-``Use of Monte Carlo generators in CMS'' \\
-\bf{Large Hadron Collider Physics 2017} 		 \> \>	    May 2017 \\
-Shanghai, China -- Contributed Parallel \\
-``Multiboson Results from CMS'' \\
-\bf{Multi-boson Interactions 2016} 		 \> \>	    Aug. 2016 \\
-Madison, WI, US -- Contributed Plenary \\
-``Resent results from ATLAS and CMS on the VV+jets production'' \\
-\bf{Division of Nuclear Physics, American Physical Society Fall Meeting} 		 \> \>	    Fall 2012 \\
-Newport Beach, CA, US -- Poster Presentation\\
-``Materials testing and performance optimization for the SAMURAI-TPC'' \\
-\bf{Division of Nuclear Physics, American Physical Society Fall Meeting} 		 \> \>	    Fall 2011 \\
-East Lansing, MI, USA -- Poster Presentation\\ 
-``Creation of Thin Deuterated Polyethylene Targets for Inverse Kinematics \\Transfer Reaction Measurements'' \\
-\end{tabbing}\vspace{-20pt}      % suppress blank line after tabbing
-
-\section{\textsc{Invited Seminars}}
-\vspace{-0.1in}
-\begin{tabbing}
-\hspace{2.3in}\= \hspace{2.6in}\= \kill % set up two tab positions
-\textbf{Brookhaven National Laboratory Particle Physics Seminar} \>\> Jan. 2019\\ 
-``Measurements and new physics searches with WZ vector boson scattering events at CMS'' \\
-Brookhaven National Laboratory \\
-Brookhaven, NY, US \\
-\textbf{Tennessee Tech University Research Seminar for Undergraduates} \>\> Nov. 2018\\ 
-``Searching for new physics (and making measurements) at the CERN Large Hadron Collider'' \\
-Tennessee Technological University
-Cookeville, TN, US \\
-\end{tabbing}\vspace{-20pt}      % suppress blank line after tabbing
-
-%\section{Other Experience}
-
-\section{\textsc{Other Professional Experience}}
-\vspace{-0.1in}
-\begin{tabbing}
-\hspace{2.3in}\= \hspace{2.5in}\= \kill % set up two tab positions
-  \textbf{Research Experience for Undergraduates Student Researcher} \>\>{May 2012--Aug. 2012}
-\end{tabbing}\vspace{-20pt}      % suppress blank line after tabbing
-National Superconducting Cyclotron Laboratory, Symmetry Energy Project Group \\
-Michigan State University, East Lansing, MI \\
-Assisted in construction and design of the SAMURAI Time Projection Chamber. 
-Particularly involved in selecting conductive materials for use in active 
-volume of detector. Researched and tested products for performance and lack 
-of contaminants. Also focused on optimizing performance of the TPC gating grid circuit.
-
-\vspace{-0.1in}
-\begin{tabbing}
-\hspace{2.3in}\= \hspace{2.5in}\= \kill % set up two tab positions
-\textbf{Undergraduate Research Assistant, Astrophysics Group} \>\> May 2011--Aug. 2011
-\end{tabbing}\vspace{-20pt}      % suppress blank line after tabbing
-Holifield Radioactive Ion Beam Facility \\
-Oak Ridge, TN \\
-Preparation of deuterated polyethylene targets for inverse kinematics 
-transfer-reaction measurements. Research into improvement of 
-target making process with emphasis on creation of thinner targets. 
-Also assisted in preparation of experiment and covering of shifts 
-during experiment.
-
-\section{\textsc{Awards}}
-\vspace{-0.1in}
-\begin{tabbing}
-\hspace{2.3in}\= \hspace{2.6in}\= \kill % set up two tab positions
-\textbf{Tennessee Technological University Physics Award} 				\>\>{Spring 2013 }\\
-Awarded to top graduating physics student \\
-\textbf{Undergraduate Physics Honor Society} \>\>{Spring 2012 }\\
-Sigma Pi Sigma Tennessee Technological University Chapter 	    \\
-\end{tabbing}\vspace{-20pt}      % suppress blank line after tabbing
-
-\section{\textsc{Teaching}}
-\vspace{-0.1in}
-
-\begin{tabbing}
-\hspace{3.5 in}\= \hspace{1.4in}\= \kill % set up two tab positions
-\textbf{Teaching Assistant}, University of Wisconsin-Madison, WI, US \>\> Fall 2013 \\
-General Physics 202: Electricity and Magnetism for Engineers \\
-TA duties included leading weekly discussions and labs for 50 students. \\
-\textbf{Teaching Assistant}, Tennessee Technological University, TN, US \>\> 2012--2013 \\
-Calculus Based Physics Lab 1 and 2 \\
-Instructed and graded physics lab class for 3 semesters (approx. 20 students each) \\
-\end{tabbing}\vspace{-20pt}      % suppress blank line after tabbing
-
-\section{\textsc{Skills}}
-\begin{itemize}
-\item \textbf{Languages:} English (Native), French (Advanced Proficient)
-\item \textbf{Computer Languages:} Experienced in C++, Python, Bash; comfortable in Java, R; \\ familiar with Scala, Perl, Fortran
-\item \textbf{Technical Skills:} Scientific knowledge, statistical analysis and machine learning, software design and maintenance, distributed computing, big data, database use, collaboration and strong interpersonal communication skills
-\end{itemize} 
-
-\end{resume}
-
+\section{Personal skills}
+\cvline{}{Extensive project management experience, working with and leading diverse groups of collaborators. Experienced at summarizing complex topics to expert and non-expert audiences.}
 \end{document}
