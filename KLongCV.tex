@@ -7,8 +7,11 @@
 \usepackage{hyperref}
 \usepackage[T1]{fontenc}
 \usepackage{enumitem}
-\setlist[itemize]{align=parleft,left=0pt..1em, label={$-$}}
-\setlist[enumerate]{align=parleft,left=0pt..1em}
+
+\setlist[itemize]{align=parleft,left=0pt..1em, label={$-$}, itemindent=0mm,labelsep=1mm}
+\setlist[enumerate]{align=parleft,left=0pt..1em, itemindent=0mm,labelsep=1mm}
+
+\newcommand{\mw}{\ensuremath{m_{\mathrm{W}}}}
 
 \begin{document}
 
@@ -19,106 +22,102 @@
 
 \begin{resume}
 \section{\textsc{Education}}
-  \textbf{University of Wisconsin-Madison}, Madison, WI \\
+\begin{itemize}
+    \item \textbf{University of Wisconsin-Madison}, Madison, WI \\
 Ph.D. in Experimental High Energy Physics, May 2019 \\
   Thesis advisor: Prof. Matthew Herndon \\
-    Thesis topic: \emph{Measurement of electroweak WZ boson production and search for new physics in proton-proton collisions at $\sqrt{s}=13$\,TeV with the CMS detector at the CERN LHC} \\
-  \textbf{Tennessee Technological University}, Cookeville, TN \\
+    Thesis topic: \emph{Measurement of electroweak WZ boson production and search for new physics in proton-proton collisions at $\sqrt{s}=13$\,TeV with the CMS detector at the CERN LHC}
+    \item \textbf{Tennessee Technological University}, Cookeville, TN \\
 Bachelor of Science in Physics, \textit{Summa Cum Laude}, May 2013
+\end{itemize}
 
 \section{\textsc{Professional Experience}}
-\vspace{-0.1in}
-\begin{tabbing}
-\hspace{2.3in}\= \hspace{2.4in}\= \kill % set up two tab positions
-{\bf Senior Postdoctoral Research Associate} \>\> Nov. 2021 -- Present \\
-Massachusetts Institute of Technology (MIT)   \\  Boston, MA, US and Meyrin, Switzerland \\
-{\bf Senior Research Fellow} \>\> Aug. 2019 -- Oct. 2021 \\
-European Organization for Nuclear Research (CERN)   \\  Meyrin, Switzerland \\
-{\bf Doctoral Researcher} \>\> Jul. 2013 -- Jul. 2019\\
-Univ. of Wisconsin-Madison Compact Muon Solenoid Group \\  Madison, WI, US and Meyrin, Switzerland \\
-\end{tabbing}\vspace{-20pt}      % suppress blank line after tabbing
+\begin{itemize}
+  \item \textbf{Senior Postdoctoral Research Associate} \hfill{Nov. 2021 -- Present} \\
+Massachusetts Institute of Technology (MIT)   \\  Boston, MA, US and Meyrin, Switzerland
+  \item \textbf{Senior Research Fellow} \hfill{Aug. 2019 -- Oct. 2021} \\
+European Organization for Nuclear Research (CERN)   \\  Meyrin, Switzerland
+  \item \textbf{Doctoral Researcher} \hfill{Jul. 2013 -- Jul. 2019} \\
+Univ. of Wisconsin-Madison Compact Muon Solenoid Group \\  Madison, WI, US and Meyrin, Switzerland
+\end{itemize}
 
-\section{\textsc{Research Interests}}
-Leveraging precision measurements at particle colliders as a tool to probe subtle effects from undiscovered new phenomena. 
-Developing new machine-learning based reconstruction techniques to enable future precision measurements in the 
-complex environments of future colliders.
+\section{\textsc{Principle research objectives and accomplishments}}
+\begin{itemize}
+  \item\textbf{{Probing the standard model with precise measurements of vector boson production}} \\
+    Resolving possible differences in the measured and predicted W boson mass (\mw), which could point to new physics, 
+    is key priority of collider physics.
+    I have led the development of the analysis strategy, software framework, and precise simulation for the CMS $\mw$ measurement, 
+    which will be published in summer 2024 with the best precision from an LHC experiment. My work has demonstrated the 
+    power of the CMS data to constrain the Parton Distribution Functions (PDFs) [6], a leading uncertainty in $\mw$ measurements at the LHC,
+    and reducing their contribution to the uncertainty in $\mw$ by 40\% compared to other LHC measurements. 
+    In close collaboration with theorists, I integrated state-of-the-art calculations directly into the data analysis,
+    reducing the impact of the W boson transverse momentum modeling uncertainty in $\mw$ by a factor of 2.
+    I also played a crucial role in measuring the W and Z boson cross sections [1] and differential distributions in low pileup. 
+    These results validate theoretical predictions used in the $\mw$ measurement and improve future PDFs and perturbative calculations.
 
-\section{\textsc{Leadership Roles in the CMS experiment}}
+  \item\textbf{Elucidating the process of electroweak symmetry breaking via studies of diboson production and vector boson scattering} \\
+    I convened the CMS diboson analysis group from 2019-2021, leading the group to $>$10 new publications. 
+    Exploiting the full Run 2 data, we observed key standard model processes for the first time, including the first-ever search 
+    for longitudinal vector boson scattering (VBS). Without a Higgs boson, 
+    the production rate of this process is divergent. Confirming that the Higgs boson fully regulates its rate is a long-term goal at the LHC.
+    I made critical contributions to the analysis and simulation for the first measurements of WZ and ZZ production at 13 TeV [10, 11]. 
+    I was responsible for all aspects of the first CMS study of WZ vector boson scattering, including the development of the analysis 
+    procedure and software tools, performance optimization, and validation [8]. Following my Ph.D., I was closely involved in the 
+    development of the extended study for first WZ vector boson scattering analysis in CMS, including the development of a novel 
+    approach to simultaneously measure the WZ and same-sign WW electroweak cross sections [7]. I extended these works into detailed 
+    projections of the timeline and prospects for the observation of longitudinal VBS at the upgraded high-luminosity LHC [17].
+
+  \item\textbf{Developing novel and precise global event reconstruction algorithms} \\
+    I convened the particle flow reconstruction group from fall 2021-2023, overseeing the preparation for and collection of the Run 3 data.
+    I maintained and improved global event reconstruction algorithms while coordinating a small team implementing physics 
+    and computational performance improvements, work that impacts every analysis performed in the CMS collaboration. 
+    I am a lead developer and avid proponent of 
+    the use of novel artificial intelligence (AI) techniques for energy clustering. Exploiting the correspondence
+    between energy clustering and object identification in computer vision tasks, we demonstrated improved accuracy and computational 
+    performance for AI-based clustering over rule-based approaches [13]. I led the application
+    of these techniques to reconstruction with the CMS high-granularity calorimeter upgrade,
+    as well as the integration into the CMS software framework [3, 4], a critical step to enabling
+    precise measurements at the high-luminosity LHC.
+
+\end{itemize}
+
+\section{\textsc{Leadership roles in the CMS Collaboration}}
 \begin{itemize}
 \item{\textbf{Convener of Particle Flow Reconstruction Group} \hfill{Sep. 2021 -- Aug. 2023}} \\
     Coordinated group of $\sim$30 members maintaining and improving CMS global event reconstruction algorithms.
     Oversaw and implemented critical performance improvements and calibrations for 
-    changing detector conditions. Guided developments to support new heterogeneous computing resources,
-    enabling significant performance emprovements.
-    Leading investigation into new algorithms for clustering and object linking using machine learning (CMS publication 3 and 4).
+    changing detector conditions in preparation for Run 3 data collection.
+    Improved hadronic energy calibration workflow and procedure, significantly
+    reducing required maintenance and improving low-energy performance by 30\%.
 \item{\textbf{Convener of Multi-boson Analysis Group} \hfill{Sep. 2019 -- Aug. 2021}} \\
     Coordinating standard model physics subgroup studying production of final states
     with multiple vector bosons. Oversaw the development and publication of over ten new measurements, 
     including the first observation of triple vector boson production and the most accurate measurements 
-    to date of WZ, W$^{\pm}$W$^{\pm}$, and W$\gamma$ vector boson scattering. Currently reviewing and guiding
-    more than ten on-going analyses.
+    to date of WZ, W$^{\pm}$W$^{\pm}$, and W$\gamma$ vector boson scattering. 
 \item{\textbf{Convener of Matrix Element and Future Generators Group} \hfill{Jun. 2017 -- May 2019}}\\
     Directed Monte Carlo Generators subgroup 
     responsible for maintenance and development of simulation software used to simulate
     billions of collisions for use in CMS analyses.
 \item{\textbf{Standard Model Physics Group Monte Carlo Contact} \hfill{Feb. 2016 -- Aug. 2017}} \\
-    Oversaw
-    production of Monte Carlo event samples for the CMS standard model physics group. 
-    Duties included technical support, coordinating requests, and monitoring samples in computing production.
+    Oversaw production of Monte Carlo event samples for the CMS standard model physics group. 
+    Duties included technical support, coordination, and monitoring computing performance.
 \item{\textbf{ Data Certification Expert, Cathode Strip Chamber}\hfill{Jul. 2015 -- Nov. 2018}} \\
     Coordinated discussion and determined if
     detector data quality was satisfactory for use in physics analyses.
-    Communicated with experts to understand
+    Communicated with detector experts to understand
     causes of data quality degradation.
 \end{itemize}
 
-\section{\textsc{CMS Analysis Activities}}
+\section{\textsc{Other research projects and responsibilities}}
 \begin{itemize}
-  \item\textbf{{Precision measurements of W and Z boson production}} \\
-    Leading precise measurements of W and Z boson properties at CMS in high- and low-pileup data.
-    Paper editor of the measurement of the W boson mass ($m_{\mathrm{W}}$), 
-    expecting highest-precision LHC result to be published in winter 2023.
-    Lead developer and maintainer of high-performance analysis framework 
-    capable of analyzing billions of events in minutes.
-    Significantly reduced Monte Carlo statistical and modeling uncertainties
-    for single boson measurements by integrating state-of-the-art predictions into
-    analysis, reducing the modeling uncertainty by up to 50\% over other LHC measurements.
-    
-  \item\textbf{{Measurements of diboson production via vector boson scattering}} \\
-    Analysis contact and lead analyzer for first WZ vector boson scattering analysis in CMS (CMS publication 7).
-    Responsible for all aspects, 
-    including development of analysis framework, procedure, optimization, and validation. 
-    Closely involved in the development of the extended study (CMS publication 6), including 
-    development of a novel approach
-    to simultaneously measure the WZ and W$^{\pm}$W$^{\pm}$ electroweak cross sections.
-    Projections of CMS electroweak WZ production measurement to high luminosity, including studies of
-    WZ polarization and sensitivity to new physics (CMS publication 8, l.a. publication 5). 
+  \item\textbf{Data acquisition, storage manager developer and on-call}\hfill{Fall 2021 -- present} \\
+    Part of a three-person team developing software and providing 24/7 support for the merging
+    of data files from independent compute nodes of the software trigger system,
+    as well as the transfer of files from the CMS detector site to the central storage system
+    at the CERN main campus. Utilizing expertise in high-performance shared file systems and multi-threaded
+    programming.
 
-  \item\textbf{{Measurements of diboson production cross sections}} \\
-    First cross section measurements
-    of ZZ and WZ production at 13 TeV (CMS publications 10 and 11). 
-    Differential measurements and constraints on anomalous
-    triple gauge couplings in ZZ channel using leptonic decays
-    with 2016 (CMS publication 9) and 2016--2018 datasets (CMS publication 2 and 5). 
-    Developed analysis software framework, produced results for theoretical comparisons, 
-    and supervised graduate students.
-    
-\end{itemize}
-
-\section{\textsc{Other Projects and Responsibilities in CMS}}
-\begin{itemize}
-  \item\textbf{Clustering and reconstruction algorithms with machine learning}\hfill{Oct. 2019 -- present} \\
-    Developing novel machine-learning-based algorithms for end-to-end particle flow reconstruction,
-    particularly focused on applications in the high-granularity calorimeter planned for the CMS Run 4 upgrade.
-    Pioneering use graph neural networks that exploit state-of-the-art transformer architectures for
-    fast and resource-limited performance in one-step clustering and regression problems (l.a. publication 1)
-    Integrated with CMS software and simulation (CMS publication 3 and 4).
-    Developed flexible framework for 3D visualization of existing and idealized reconstruction algorithms.
-
-  \item\textbf{Data acquisition storage manager expert}\hfill{Nov. 2021 -- present} \\
-    Part of a three-person 
-
-  \item\textbf{Monte Carlo generator integration and support}\hfill{Jan. 2017 -- present} \\
+  \item\textbf{Monte Carlo generator integration and support}\hfill{Winter 2017 -- Summer 2021} \\
     Developed and implemented the production of a new data format, now used throughout CMS, to enable fast and lightweight production
     of generator-level collision simulations. Performed major restructuring of CMS simulation software interface
     to systematic variations, improving ease of use and enabling more extensive evaluation of theoretical uncertainties in analysis.
@@ -127,26 +126,26 @@ complex environments of future colliders.
 
   \item\textbf{Endcap muon detector detector on-call shifter}\hfill{Apr. 2016 -- Jul. 2018} \\
     First contact for CMS endcap muon system during commissioning and data-taking for three weeks per year
-    from 2016-2018. Duties included monitoring of the cathode strip chamber system, coordinating maintenance activities,
-    and addressing any urgent issues affecting data collection or quality.
+    from 2016-2018. Monitoring of the cathode strip chamber system, coordinating maintenance activities,
+    and addressing urgent issues affecting data collection or quality.
 
   \item\textbf{Muon detector longevity studies}\hfill{Jan. 2016 -- Jun. 2016} \\
     Assisted in setup of test system and performance measurements of cathode strip chambers
     exposed to high-intensity gamma radiation to assess the physical degradation and impact on muon
     reconstruction performance. Operation shifts during data collection with muon beams.
-
 \end{itemize}
 
+\vspace{-2mm}
 \section{\textsc{CMS publications and public results with significant contributions}}
-\begin{enumerate}[itemindent=1mm,labelsep=1mm]
+\begin{enumerate}
   \item CMS Collaboration, ``Measurement of W and Z boson inclusive cross sections in pp collisions at 5.02 and 13 TeV,'' \href{https://cds.cern.ch/record/2868090}{\texttt{CMS-PAS-SMP-20-004}} 
   \item CMS Collaboration, ``Measurement of the differential ZZ$+$jets production cross sections in pp collisions at $\sqrt{s} = 13$ TeV,'' \href{https://cds.cern.ch/record/2859350}{\texttt{CMS-PAS-SMP-22-001}} 
   \item S. Bhattacharya, K. Long, et. al. for the CMS Collaboration, ``GNN-based end-to-end reconstruction in the CMS Phase 2 High-Granularity Calorimeter,'' J. Phys.: Conf. Ser. 2438 012090, \href{https://arxiv.org/abs/2203.01189}{\texttt{arXiv:2203.01189 [ins-det]}} 
   \item S. Qasim, K. Long, et. al. for the CMS Collaboration, ``Multi-particle reconstruction in the High Granularity Calorimeter using object condensation and graph neural networks,'' Proceedings for the 25th International Conference on Computing in High-Energy and Nuclear Physics, \href{https://arxiv.org/abs/2106.01832}{\texttt{arXiv:2106.01832 [ins-det]}} 
   \item CMS Collaboration, ``Measurements of pp $\rightarrow$ ZZ production cross section and constraints on anomalous triple gauge couplings at $\sqrt{s} = 13~\mathrm{TeV}$,'' Eur. Phys. J. C 81 (2021) 200, \href{https://arxiv.org/abs/2009.01186}{\texttt{arXiv:2009.01186 [hep-ex]}}
+  \item CMS Collaboration, ``Measurements of the W boson rapidity, helicity, double-differential cross sections, and charge asymmetry in pp collisions at $\sqrt{s}=13$\,TeV,'' Phys. Rev. D 102, 092012 (2020), \href{https://arxiv.org/abs/2008.04174}{\texttt{arXiv:2008.04174 [hep-ex]}}
   \item CMS Collaboration, ``Measurements of production cross sections of WZ and same-sign WW boson pairs in association with two jets in proton-proton collisions at $\sqrt{s} =$ 13 TeV'' Phys. Lett. B 809 (2020) 135710, \href{https://arxiv.org/abs/2005.01173}{\texttt{arXiv:2005.01173 [hep-ex]}}
   \item CMS Collaboration, ``Measurement of electroweak WZ boson production and search for new physics in WZ $+$ two jets events in pp collisions at $\sqrt{s}=13$\,TeV,'' Phys. Lett. B 795 (2019) 281, \href{https://arxiv.org/abs/1901.04060} {\texttt{arXiv:1901.04060 [hep-ex]}}
-  \item CMS Collaboration, ``Prospects for the measurement of electroweak and polarized $\mathrm{WZ}\to3\ell\nu$ production cross sections at the High-Luminosity LHC,'' CMS-PAS-FTR-18-038
   \item CMS Collaboration, ``Measurement of the pp $\rightarrow$ ZZ production cross section, $\mathrm{Z} \to 4\ell$ branching fraction, and constraints on anomalous triple gauge couplings at $\sqrt{s} = 13~\mathrm{TeV}$,'' Eur. Phys. J. C 78 (2018) 165, \href{https://arxiv.org/abs/1709.08601}{\texttt{arXiv:1709.08601 [hep-ex]}}
   \item CMS Collaboration, ``Measurement of the WZ production cross section in pp collisions at $\sqrt{s}$ = 13 TeV,''
 Phys. Lett. B 766, 268 (2016), \href{https://arxiv.org/abs/1607.06943}{\texttt{arXiv:1607.06943 [hep-ex]}}
@@ -156,143 +155,102 @@ Phys. Lett. B 763, (2016) 280, \\ \href{https://arxiv.org/abs/1607.08834} {\text
 JINST 13 (2018) P06015, \href{https://arxiv.org/abs/1804.04528} {\texttt{arXiv:1804.04528 [hep-ex]}}
 \end{enumerate}
 
-\section{\textsc{Limited authorship publications}}
-\begin{enumerate}[itemindent=1mm,labelsep=1mm]
-  \item S. Qasim, N. Chernyavskaya, J. Kieseler, K. Long, et. al., ``End-to-end multi-particle reconstruction in high occupancy imaging calorimeters with graph neural networks,'' \href{https://arxiv.org/abs/2106.01832}{\texttt{arXiv:2106.01832 [ins-det]}}, Accepted by Eur. Phys. J. C
+\section{\textsc{Limited authorship publications with significant contributions}}
+\begin{enumerate}\addtocounter{enumi}{12}
+  \item S. Qasim, N. Chernyavskaya, J. Kieseler, K. Long, et. al., ``End-to-end multi-particle reconstruction in high occupancy imaging calorimeters with graph neural networks,'' 
+    Eur. Phys. J. C 82 (2022) 8, 753, \href{https://arxiv.org/abs/2106.01832}{\texttt{arXiv:2106.01832 [ins-det]}}
   \item D. Franzosi et al.,``Vector Boson Scattering Processes: Status and Prospects,''
-    Submitted to Reviews in Physics, VBSCAN-PUB-04-21, \href{https://arxiv.org/abs/2106.01393}{\texttt{arXiv:2106.01393 [hep-ph]}}
+    Rev. Phys. 8 (2022) 100071, VBSCAN-PUB-04-21, \href{https://arxiv.org/abs/2106.01393}{\texttt{arXiv:2106.01393 [hep-ph]}}
   \item M. Gallinaro, K. Long, J. Reuter, R. Ruiz (editors) et al.,``Beyond the Standard Model in Vector Boson Scattering Signatures,''
-    VBSCAN-PUB-04-20, CERN-OPEN-2020-008, \href{https://arxiv.org/abs/2005.09889}{\texttt{arXiv:2005.09889 [hep-ph]}}
+    CERN-OPEN-2020-008, \href{https://arxiv.org/abs/2005.09889}{\texttt{arXiv:2005.09889 [hep-ph]}}
   \item S. Amoroso et al., ``Les Houches 2019: Physics at TeV Colliders Standard Model Working Group Report,''
     \href{https://arxiv.org/abs/2003.01700 } {\texttt{arXiv:2003.01700 [hep-ph]}}
   \item HL-LHC Collaboration and HE-LHC Working Group, ``Standard Model Physics at the HL-LHC and HE-LHC,''
     CERN-LPCC-2018-03, \href{https://arxiv.org/abs/1902.04070}{\texttt{arXiv:1902.04070 [hep-ph]}}
   \item J.R. Andersen et al., ``Les Houches 2017: Physics at TeV Colliders Standard Model Working Group Report,''
     FERMILAB-CONF-18-122-CD-T, UWTHPH-2018-5, \href{https://arxiv.org/abs/1803.07977}{\texttt{arXiv:1803.07977 [hep-ph]}}
-  \item C. Anders et al., ``VBSCan Split 2017 Workshop Summary,'' 
-    VBSCAN-PUB-01-17, FERMILAB-CONF-18-021-PPD, \href{https://arxiv.org/abs/1801.04203}{\texttt{arXiv:1803.07977  [hep-ph]}}
 \end{enumerate}
 
 \section{\textsc{Presentations at International Conferences and Workshops}}
-\vspace{-0.1in}
-\begin{tabbing}
-\hspace{2.3in}\= \hspace{2.6in}\= \kill % set up two tab positions
-``Role of theoretical uncertainties in the measurement of $m_{\mathrm{W}}$'' \\
-\bf{CMS W boson mass measurement Hackathon: Open session} 		 \> \>	    Jan. 2023 \\
-Boston, MA, USA -- Invited Plenary \\
-``Status and outlook for particle flow reconstruction at CMS'' \\
-\bf{ECFA topical meeting on reconstruction at Higgs factories} 		 \> \>	    May 2022 \\
-Hamburg, Germany -- Invited Plenary\\
-``CMS particle flow status and prospects for Run 3'' \\
-\bf{Ramping up to Run 3: CMS JetMET workshop} 		 \> \>	    Apr. 2022 \\
-Florence, Italy -- Invited Plenary\\
-``EW precision measurements in single boson production at CMS'' \\
-\bf{Rencontres de Blois 2021} 		 \> \>	    Apr. 2022 \\
-Blois, France -- Contributed Parallel\\
-``Overview of CMS vector boson scattering results'' \\
-\bf{Vector boson scattering for SNOWMASS---VBSCan workshop} 		 \> \>	    Feb. 2021 \\
-Virutal -- Invited Plenary\\
-``Overview of current CMS results on Vector boson scattering'' \\
-\bf{BSM models in vector boson scattering---VBSCan workshop} 		 \> \>	    Dec. 2019 \\
-Lisbon, Portugal -- Invited Plenary\\
-``Vector boson scattering results and future prospects'' \\
-\bf{Standard Model at LHC 2019} 		 \> \>	    Apr. 2019 \\
-Zurich, Switzerland -- Contributed Plenary \\
-``Recent vector boson fusion and scattering measurements at ATLAS and CMS'' \\
-\bf{US LHC Users Association Meeting 2018} 		 \> \>	    Oct. 2018 \\
-Fermilab, Batavia, IL, US -- Young Scientists Lightning Round \\
-``Search for electroweak WZ vector boson scattering and new physics at CMS'' \\
-\emph{Awarded best presentation } \\
-\bf{Multi-boson Interactions 2018} 		 \> \>	    Aug. 2018 \\
-Ann Arbor, MI, US -- Contributed Plenary \\
-``Results from ATLAS and CMS on the neutral VBS production \\
-\bf{XXXIX International Conference on High Energy Physics} 		 \> \>	    Jul. 2018 \\
-Seoul, South Korea -- Contributed Parallel\\
-``Vector Boson Scattering Results from CMS'' \\
-\bf{30th Rencontres de Blois} 		 \> \>	    Jun. 2018 \\
-Blois, France -- Contributed Parallel\\
-``VBS and VBF results from ATLAS and CMS'' \\
-\bf{17th MCnet Collaboration Meeting} 		 \> \>	    Apr. 2018 \\
-CERN, Geneva, Switzerland -- Contributed Plenary\\
-``Use of Monte Carlo generators in CMS'' \\
-\bf{Large Hadron Collider Physics 2017} 		 \> \>	    May 2017 \\
-Shanghai, China -- Contributed Parallel \\
-``Multiboson Results from CMS'' \\
-\bf{Multi-boson Interactions 2016} 		 \> \>	    Aug. 2016 \\
-Madison, WI, US -- Contributed Plenary \\
-``Resent results from ATLAS and CMS on the VV+jets production'' \\
-\bf{Division of Nuclear Physics, American Physical Society Fall Meeting} 		 \> \>	    Fall 2012 \\
-Newport Beach, CA, US -- Poster Presentation\\
-``Materials testing and performance optimization for the SAMURAI-TPC'' \\
-\bf{Division of Nuclear Physics, American Physical Society Fall Meeting} 		 \> \>	    Fall 2011 \\
-East Lansing, MI, USA -- Poster Presentation\\ 
-``Creation of Thin Deuterated Polyethylene Targets for Inverse Kinematics \\Transfer Reaction Measurements'' \\
-\end{tabbing}\vspace{-20pt}      % suppress blank line after tabbing
+\begin{enumerate}
+  \item ``Electroweak (single W/Z) measurements at ATLAS and CMS,''
+    \emph{58th Rencontres de Moriond on Electroweak Interactions and Unified Theories}, Contributed Plenary. Mar. 2024, La Thuile, Italy.
+  \item ``Role of theoretical uncertainties in the measurement of $m_{\mathrm{W}}$,''
+    \emph{CMS W boson mass measurement Hackathon: Open session}, Invited Plenary. Jan. 2023, Boston, MA, USA.
+  \item ``Status and outlook for particle flow reconstruction at CMS,'' Invited Plenary.
+    \emph{ECFA topical meeting on reconstruction at Higgs factories}, May 2022, Hamburg, Germany.
+  \item ``CMS particle flow status and prospects for Run 3,'' 
+    \emph{Ramping up to Run 3: CMS JetMET workshop}, Invited Plenary. Apr. 2022, Florence, Italy.
+  \item ``EW precision measurements in single boson production at CMS,'' 
+    \emph{32nd Rencontres de Blois 2021}, Contributed Parallel. Oct. 2021, Blois, France.
+  \item ``Overview of CMS vector boson scattering results,'' 
+    \emph{Vector boson scattering for SNOWMASS---VBSCan workshop}, Invited Plenary. Feb. 2021, Virtual.
+  \item ``Vector boson scattering results and future prospects,'' 
+    \emph{BSM models in vector boson scattering---VBSCan workshop}, Invited Plenary. Dec. 2019, Lisbon, Portugal.
+  \item ``Recent vector boson fusion and scattering measurements at ATLAS and CMS,'' 
+    \emph{Standard Model at the LHC 2019}, Contributed Plenary. Apr. 2019, Zurich, Switzerland.
+  \item ``Search for electroweak WZ vector boson scattering and new physics at CMS,''
+    \emph{US LHC Users Association Meeting 2018}, Young Scientists Lightning Round. Oct. 2018, Fermilab, Batavia, IL, US. \emph{Best presentation award}.
+  \item ``Results from ATLAS and CMS on the neutral VBS production,'' 
+    \emph{Multi-boson Interactions 2018}, Contributed Plenary. Aug. 2018, Ann Arbor, MI, US.
+  \item ``Vector Boson Scattering Results from CMS'' \\
+    \emph{XXXIX International Conference on High Energy Physics}, Contributed Parallel, Jul. 2018. Seoul, South Korea.
+  \item ``VBS and VBF results from ATLAS and CMS,''
+    \emph{30th Rencontres de Blois}, Contributed Parallel. Jun. 2018, Blois, France.
+  \item ``Use of Monte Carlo generators in CMS,'' 
+    \emph{17th MCnet Collaboration Meeting}, Contributed Plenary, Apr. 2018, CERN, Geneva, Switzerland.
+  \item ``Multiboson Results from CMS''
+    \emph{Large Hadron Collider Physics 2017}, Contributed Parallel, May 2017. Shanghai, China.
+  \item ``Resent results from ATLAS and CMS on the VV+jets production,''
+    \emph{Multi-boson Interactions 2016}, Contributed Plenary, Aug. 2016. Madison, WI, US.
+  \item ``Materials testing and performance optimization for the SAMURAI-TPC,''
+    \emph{Division of Nuclear Physics, American Physical Society Fall Meeting}, Poster presentation. Fall 2012, Newport Beach, CA, US.
+  \item ``Creation of Thin Deuterated Polyethylene Targets for Inverse Kinematics Transfer Reaction Measurements,''
+    \emph{Division of Nuclear Physics, American Physical Society Fall Meeting}, Poster presentation. Fall 2011. East Lansing, MI, USA.
+\end{enumerate}
 
 \section{\textsc{Invited Seminars}}
-\vspace{-0.1in}
-\begin{tabbing}
-\hspace{2.3in}\= \hspace{2.6in}\= \kill % set up two tab positions
-\textbf{Brookhaven National Laboratory Particle Physics Seminar} \>\> Jan. 2019\\ 
-``Measurements and new physics searches with WZ vector boson scattering events at CMS'' \\
-Brookhaven National Laboratory \\
-Brookhaven, NY, US \\
-\textbf{Tennessee Tech University Research Seminar for Undergraduates} \>\> Nov. 2018\\ 
-``Searching for new physics (and making measurements) at the CERN Large Hadron Collider'' \\
-Tennessee Technological University
-Cookeville, TN, US \\
-\end{tabbing}\vspace{-20pt}      % suppress blank line after tabbing
-
-%\section{Other Experience}
+\begin{enumerate}
+ \item ``Measurements and new physics searches with WZ vector boson scattering events at CMS,''
+     \emph{Brookhaven National Laboratory Particle Physics Seminar}, Jan. 2019, Brookhaven National Laboratory, Brookhaven, NY, US.
+  \item ``Searching for new physics (and making measurements) at the CERN Large Hadron Collider,''
+     \emph{Tennessee Tech University Research Seminar for Undergraduates}, Nov. 2018, Tennessee Technological University, Cookeville, TN, US.
+\end{enumerate}
 
 \section{\textsc{Other Professional Experience}}
-\vspace{-0.1in}
-\begin{tabbing}
-\hspace{2.3in}\= \hspace{2.5in}\= \kill % set up two tab positions
-  \textbf{Research Experience for Undergraduates Student Researcher} \>\>{May 2012--Aug. 2012}
-\end{tabbing}\vspace{-20pt}      % suppress blank line after tabbing
-National Superconducting Cyclotron Laboratory, Symmetry Energy Project Group \\
-Michigan State University, East Lansing, MI \\
-Contributed to construction and design of the SAMURAI Time Projection Chamber. 
-Particularly involved in selecting conductive materials for use in active 
+\begin{itemize}
+\item \textbf{Research Experience for Undergraduates Student Researcher}\hfill{May 2012 -- Aug. 2012} \\
+National Superconducting Cyclotron Laboratory, Michigan State University, East Lansing, MI \\
+Contributed to construction and design of the SAMURAI Time Projection Chamber,
+especially conductive materials for use in active 
 volume of detector. Researched and tested products for performance and lack 
-of contaminants. Also focused on optimizing performance of the TPC gating grid circuit.
+of contaminants. Optimized performance of the TPC gating grid circuit.
 
-\vspace{-0.1in}
-\begin{tabbing}
-\hspace{2.3in}\= \hspace{2.5in}\= \kill % set up two tab positions
-\textbf{Undergraduate Research Assistant, Astrophysics Group} \>\> May 2011--Aug. 2011
-\end{tabbing}\vspace{-20pt}      % suppress blank line after tabbing
-Holifield Radioactive Ion Beam Facility \\
-Oak Ridge, TN \\
+\item \textbf{Undergraduate Research Assistant, Astrophysics Group} \hfill{May 2011--Aug. 2011} \\
+Holifield Radioactive Ion Beam Facility, Oak Ridge, TN. \\
 Preparation of deuterated polyethylene targets for inverse kinematics 
 transfer-reaction measurements. Research into improvement of 
 target making process with emphasis on creation of thinner targets. 
 Assisted in preparation of experiment and covering of shifts 
 during experiment.
+\end{itemize}
 
 \section{\textsc{Awards}}
-\vspace{-0.1in}
-\begin{tabbing}
-\hspace{2.3in}\= \hspace{2.6in}\= \kill % set up two tab positions
-\textbf{CMS Collaboration 2020 Achievement Award} 				\>\>{Winter 2020}\\
-For outstanding contributions to the Monte Carlo simulation group \\
-\textbf{Physics Award} 				\>\>{Spring 2013 }\\
-Awarded to top graduating physics student at Tennessee Technological University\\
-\end{tabbing}\vspace{-20pt}      % suppress blank line after tabbing
+\begin{itemize}
+  \item \textbf{CMS Collaboration 2020 Achievement Award}\hfill{2020}\\
+    For outstanding contributions to the Monte Carlo simulation group
+  \item \textbf{Physics Award} 				\hfill{Spring 2013 }\\
+    Awarded to top graduating physics student at Tennessee Technological University
+\end{itemize}
 
 \section{\textsc{Teaching}}
-\vspace{-0.1in}
 
-\begin{tabbing}
-\hspace{3.5 in}\= \hspace{1.4in}\= \kill % set up two tab positions
-\textbf{Teaching Assistant}, University of Wisconsin-Madison, WI, US \>\> Fall 2013 \\
-General Physics 202: Electricity and Magnetism for Engineers \\
-TA duties included leading weekly discussions and labs for 50 students. \\
-\textbf{Teaching Assistant}, Tennessee Technological University, TN, US \>\> 2012--2013 \\
-Calculus Based Physics Lab 1 and 2 \\
-Instructed and graded physics lab class for 3 semesters (20 students each) \\
-\end{tabbing}\vspace{-20pt}      % suppress blank line after tabbing
+\begin{itemize}
+\item \textbf{Teaching Assistant}, University of Wisconsin-Madison, WI, US \hfill{Fall 2013} \\
+Leading weekly discussions and labs for 50 students in electricity and magnetism for engineers.
+\item \textbf{Teaching Assistant}, Tennessee Technological University, TN, US \hfill{2012--2013} \\
+Instructed and graded introductory physics lab for engineers for 3 semesters (20 students each).
+\end{itemize}
 
 \section{\textsc{Skills}}
 \begin{itemize}
