@@ -3,10 +3,13 @@
 %\usepackage{newcent}   % uses new century schoolbook postscript font 
 %\setlength{\textheight}{9 in} % increase text height to fit resume on 1 page
 %\newsectionwidth{0pt}  % So the text is not indented under section headings
+\usepackage{orcidlink}
 \usepackage[dvipsnames]{xcolor}
 \usepackage{hyperref}
 \usepackage[T1]{fontenc}
 \usepackage{enumitem}
+\usepackage{academicons}
+\definecolor{orcidlogocol}{HTML}{A6CE39}
 
 \setlist[itemize]{align=parleft,left=0pt..1em, label={$-$}, itemindent=0mm,labelsep=1mm}
 \setlist[enumerate]{align=parleft,left=0pt..1em, itemindent=0mm,labelsep=1mm}
@@ -15,7 +18,7 @@
 
 \begin{document}
 
-\name{Kenneth Long\\ \hspace{-0.2cm}{kenneth.long@cern.ch} \\[11pt]} % the \\[12pt] adds a blank line after name
+\name{Kenneth Long \orcidlink{0000-0003-0664-1653} \\ \hspace{-0.2cm}{kenneth.long@cern.ch} \\[11pt]} % the \\[12pt] adds a blank line after name
 
 \address{\textbf{Current Address} \\  CERN B40/2-A20 \\  Geneva 23 \\ Switzerland \\ Tel: +41 77 501 95 13 }
 \address{}
@@ -41,11 +44,11 @@ European Organization for Nuclear Research (CERN)   \\  Meyrin, Switzerland
 Univ. of Wisconsin-Madison Compact Muon Solenoid Group \\  Madison, WI, US and Meyrin, Switzerland
 \end{itemize}
 
-\section{\textsc{Principle research objectives and accomplishments}}
+\section{\textsc{Principal research objectives and accomplishments}}
 \begin{itemize}
   \item\textbf{{Probing the standard model with precise measurements of vector boson production}} \\
     Resolving possible differences in the measured and predicted W boson mass (\mw), which could point to new physics, 
-    is key priority of collider physics.
+    is a key priority of collider physics.
     I have led the development of the analysis strategy, software framework, and precise simulation for the CMS $\mw$ measurement, 
     which will be published in summer 2024 with the best precision from an LHC experiment. My work has demonstrated the 
     power of the CMS data to constrain the Parton Distribution Functions (PDFs) [6], a leading uncertainty in $\mw$ measurements at the LHC,
@@ -68,15 +71,15 @@ Univ. of Wisconsin-Madison Compact Muon Solenoid Group \\  Madison, WI, US and M
     projections of the timeline and prospects for the observation of longitudinal VBS at the upgraded high-luminosity LHC [17].
 
   \item\textbf{Developing novel and precise global event reconstruction algorithms} \\
-    I convened the particle flow reconstruction group from fall 2021-2023, overseeing the preparation for and collection of the Run 3 data.
+    I convened the particle flow reconstruction group from fall 2021--2023, overseeing the preparation for and collection of the Run 3 data.
     I maintained and improved global event reconstruction algorithms while coordinating a small team implementing physics 
     and computational performance improvements, work that impacts every analysis performed in the CMS collaboration. 
     I am a lead developer and avid proponent of 
     the use of novel artificial intelligence (AI) techniques for energy clustering. Exploiting the correspondence
     between energy clustering and object identification in computer vision tasks, we demonstrated improved accuracy and computational 
-    performance for AI-based clustering over rule-based approaches [13]. I led the application
+    performance for AI-based clustering over rule-based approaches [11]. I led the application
     of these techniques to reconstruction with the CMS high-granularity calorimeter upgrade,
-    as well as the integration into the CMS software framework [3, 4], a critical step to enabling
+    as well as the integration into the CMS software framework [12, 13], a critical step to enabling
     precise measurements at the high-luminosity LHC.
 
 \end{itemize}
@@ -118,13 +121,12 @@ Univ. of Wisconsin-Madison Compact Muon Solenoid Group \\  Madison, WI, US and M
     programming.
 
   \item\textbf{Monte Carlo generator integration and support}\hfill{Winter 2017 -- Summer 2021} \\
-    Developed and implemented the production of a new data format, now used throughout CMS, to enable fast and lightweight production
-    of generator-level collision simulations. Performed major restructuring of CMS simulation software interface
-    to systematic variations, improving ease of use and enabling more extensive evaluation of theoretical uncertainties in analysis.
+    Developed and implemented a new data format for fast production
+    of generator-level collision simulations with compressed event content, now used through collaboration. 
     Leading developer of software used to interface simulation tools
     developed by theoretical collaborations into experimental software framework (2017 -- 2019).
 
-  \item\textbf{Endcap muon detector detector on-call shifter}\hfill{Apr. 2016 -- Jul. 2018} \\
+  \item\textbf{Endcap muon detector on-call shifter}\hfill{Apr. 2016 -- Jul. 2018} \\
     First contact for CMS endcap muon system during commissioning and data-taking for three weeks per year
     from 2016-2018. Monitoring of the cathode strip chamber system, coordinating maintenance activities,
     and addressing urgent issues affecting data collection or quality.
@@ -136,12 +138,11 @@ Univ. of Wisconsin-Madison Compact Muon Solenoid Group \\  Madison, WI, US and M
 \end{itemize}
 
 \vspace{-2mm}
-\section{\textsc{CMS publications and public results with significant contributions}}
+\section{\textsc{Selected CMS publications and public results with significant contributions}}
+Author of more than 800 publications with the CMS Collaboration, a selection of which is given below. Full list available in \href{https://inspirehep.net/authors/1280606}{Inspire} or ORCID\orcidlink{0000-0003-0664-1653}. \\
 \begin{enumerate}
-  \item CMS Collaboration, ``Measurement of W and Z boson inclusive cross sections in pp collisions at 5.02 and 13 TeV,'' \href{https://cds.cern.ch/record/2868090}{\texttt{CMS-PAS-SMP-20-004}} 
-  \item CMS Collaboration, ``Measurement of the differential ZZ$+$jets production cross sections in pp collisions at $\sqrt{s} = 13$ TeV,'' \href{https://cds.cern.ch/record/2859350}{\texttt{CMS-PAS-SMP-22-001}} 
-  \item S. Bhattacharya, K. Long, et. al. for the CMS Collaboration, ``GNN-based end-to-end reconstruction in the CMS Phase 2 High-Granularity Calorimeter,'' J. Phys.: Conf. Ser. 2438 012090, \href{https://arxiv.org/abs/2203.01189}{\texttt{arXiv:2203.01189 [ins-det]}} 
-  \item S. Qasim, K. Long, et. al. for the CMS Collaboration, ``Multi-particle reconstruction in the High Granularity Calorimeter using object condensation and graph neural networks,'' Proceedings for the 25th International Conference on Computing in High-Energy and Nuclear Physics, \href{https://arxiv.org/abs/2106.01832}{\texttt{arXiv:2106.01832 [ins-det]}} 
+  \item CMS Collaboration, ``Measurement of W and Z boson inclusive cross sections in pp collisions at 5.02 and 13 TeV,'' \href{https://cds.cern.ch/record/2868090}{\texttt{CMS-PAS-SMP-20-004}}, Submission to JHEP expected in March 2024.
+  \item CMS Collaboration, ``Measurement of the differential ZZ$+$jets production cross sections in pp collisions at $\sqrt{s} = 13$ TeV,'' \href{https://cds.cern.ch/record/2859350}{\texttt{CMS-PAS-SMP-22-001}}, Submitted to JHEP.
   \item CMS Collaboration, ``Measurements of pp $\rightarrow$ ZZ production cross section and constraints on anomalous triple gauge couplings at $\sqrt{s} = 13~\mathrm{TeV}$,'' Eur. Phys. J. C 81 (2021) 200, \href{https://arxiv.org/abs/2009.01186}{\texttt{arXiv:2009.01186 [hep-ex]}}
   \item CMS Collaboration, ``Measurements of the W boson rapidity, helicity, double-differential cross sections, and charge asymmetry in pp collisions at $\sqrt{s}=13$\,TeV,'' Phys. Rev. D 102, 092012 (2020), \href{https://arxiv.org/abs/2008.04174}{\texttt{arXiv:2008.04174 [hep-ex]}}
   \item CMS Collaboration, ``Measurements of production cross sections of WZ and same-sign WW boson pairs in association with two jets in proton-proton collisions at $\sqrt{s} =$ 13 TeV'' Phys. Lett. B 809 (2020) 135710, \href{https://arxiv.org/abs/2005.01173}{\texttt{arXiv:2005.01173 [hep-ex]}}
@@ -155,10 +156,12 @@ Phys. Lett. B 763, (2016) 280, \\ \href{https://arxiv.org/abs/1607.08834} {\text
 JINST 13 (2018) P06015, \href{https://arxiv.org/abs/1804.04528} {\texttt{arXiv:1804.04528 [hep-ex]}}
 \end{enumerate}
 
-\section{\textsc{Limited authorship publications with significant contributions}}
-\begin{enumerate}\addtocounter{enumi}{12}
+\section{\textsc{Selected limited authorship publications with significant contributions}}
+\begin{enumerate}\addtocounter{enumi}{10}
   \item S. Qasim, N. Chernyavskaya, J. Kieseler, K. Long, et. al., ``End-to-end multi-particle reconstruction in high occupancy imaging calorimeters with graph neural networks,'' 
     Eur. Phys. J. C 82 (2022) 8, 753, \href{https://arxiv.org/abs/2106.01832}{\texttt{arXiv:2106.01832 [ins-det]}}
+  \item S. Bhattacharya, K. Long, et. al. for the CMS Collaboration, ``GNN-based end-to-end reconstruction in the CMS Phase 2 High-Granularity Calorimeter,'' J. Phys.: Conf. Ser. 2438 012090, \href{https://arxiv.org/abs/2203.01189}{\texttt{arXiv:2203.01189 [ins-det]}} 
+  \item S. Qasim, K. Long, et. al. for the CMS Collaboration, ``Multi-particle reconstruction in the High Granularity Calorimeter using object condensation and graph neural networks,'' Proceedings for the 25th International Conference on Computing in High-Energy and Nuclear Physics, \href{https://arxiv.org/abs/2106.01832}{\texttt{arXiv:2106.01832 [ins-det]}} 
   \item D. Franzosi et al.,``Vector Boson Scattering Processes: Status and Prospects,''
     Rev. Phys. 8 (2022) 100071, VBSCAN-PUB-04-21, \href{https://arxiv.org/abs/2106.01393}{\texttt{arXiv:2106.01393 [hep-ph]}}
   \item M. Gallinaro, K. Long, J. Reuter, R. Ruiz (editors) et al.,``Beyond the Standard Model in Vector Boson Scattering Signatures,''
@@ -204,17 +207,17 @@ JINST 13 (2018) P06015, \href{https://arxiv.org/abs/1804.04528} {\texttt{arXiv:1
   \item ``Resent results from ATLAS and CMS on the VV+jets production,''
     \emph{Multi-boson Interactions 2016}, Contributed Plenary, Aug. 2016. Madison, WI, US.
   \item ``Materials testing and performance optimization for the SAMURAI-TPC,''
-    \emph{Division of Nuclear Physics, American Physical Society Fall Meeting}, Poster presentation. Fall 2012, Newport Beach, CA, US.
+    \emph{American Physical Society Nuclear Physics Meeting}, Poster presentation, Fall 2012. Newport Beach, CA, US.
   \item ``Creation of Thin Deuterated Polyethylene Targets for Inverse Kinematics Transfer Reaction Measurements,''
-    \emph{Division of Nuclear Physics, American Physical Society Fall Meeting}, Poster presentation. Fall 2011. East Lansing, MI, USA.
+    \emph{American Physical Society Nuclear Physics Meeting}, Poster presentation, Fall 2011. East Lansing, MI, USA.
 \end{enumerate}
 
 \section{\textsc{Invited Seminars}}
 \begin{enumerate}
  \item ``Measurements and new physics searches with WZ vector boson scattering events at CMS,''
-     \emph{Brookhaven National Laboratory Particle Physics Seminar}, Jan. 2019, Brookhaven National Laboratory, Brookhaven, NY, US.
+     \emph{Brookhaven National Laboratory Particle Physics Seminar}, Jan. 2019. Brookhaven National Laboratory, Brookhaven, NY, US.
   \item ``Searching for new physics (and making measurements) at the CERN Large Hadron Collider,''
-     \emph{Tennessee Tech University Research Seminar for Undergraduates}, Nov. 2018, Tennessee Technological University, Cookeville, TN, US.
+     \emph{Tennessee Tech University Research Seminar for Undergraduates}, Nov. 2018. Tennessee Technological University, Cookeville, TN, US.
 \end{enumerate}
 
 \section{\textsc{Other Professional Experience}}
@@ -222,8 +225,8 @@ JINST 13 (2018) P06015, \href{https://arxiv.org/abs/1804.04528} {\texttt{arXiv:1
 \item \textbf{Research Experience for Undergraduates Student Researcher}\hfill{May 2012 -- Aug. 2012} \\
 National Superconducting Cyclotron Laboratory, Michigan State University, East Lansing, MI \\
 Contributed to construction and design of the SAMURAI Time Projection Chamber,
-especially conductive materials for use in active 
-volume of detector. Researched and tested products for performance and lack 
+focusing on the selection and integration of conductive materials within the detector's active volume
+Researched and tested products for performance and lack 
 of contaminants. Optimized performance of the TPC gating grid circuit.
 
 \item \textbf{Undergraduate Research Assistant, Astrophysics Group} \hfill{May 2011--Aug. 2011} \\
